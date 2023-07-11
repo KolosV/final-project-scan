@@ -1,0 +1,45 @@
+:global {
+    .slick-slider {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .slick-list {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+    .slick-track {
+        display: flex;
+    }
+    .slick-slide {
+        width: 30%;
+        margin: 15px 15px;
+        padding: 22px 20px 68px 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 500px) {
+            padding: 30px 17px;
+        }
+    }
+}
+.about {
+    margin-bottom: 70px;
+}
+.arrowNext {
+    transform: rotate(180deg);
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+.arrowPrev {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.imgSlider {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,161 @@
+.formWrapper {
+    padding: 0 0 0 73px;
+    position: relative;
+    
+    .keyLock {
+        position: absolute;
+        top: -60px;
+        left: 32px;
+    }
+    @media screen and (max-width: 1050px) {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        .keyLock {
+            position: absolute;
+            top: -60px;
+            left: -40px;
+        }
+        .form {
+            position: relative;
+        }
+    }
+    @media screen and (max-width: 500px){
+        .keyLock {
+            left: -5px;
+        }
+    }
+    .form {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        padding: 25px 25px 39px;
+        width: 430px;
+        @media screen and (max-width: 500px){
+            width: 100%;
+        }
+        .btnWrapper {
+            display: flex;
+            margin-bottom: 40px;
+            justify-content: space-between;
+            gap: 15px;
+            button {
+                background: none;
+                border-bottom: 2px solid #029491;
+                font-size: 16px;
+                color: #029491;
+                line-height: 19px;
+                letter-spacing: 0.02em;
+                @media screen and (max-width: 500px){
+                    font-size: 14px;
+                }
+            }
+            @media screen and (max-width: 500px){
+                gap: 0;
+                flex-wrap: wrap;
+                justify-content: center;
+                row-gap: 20px;
+            }
+            .login {
+                padding: 0 50px 8px;
+                cursor: pointer;
+                @media screen and (max-width: 500px){
+                    padding: 0 30px 8px;
+                }
+            }
+            .register {
+                padding: 0 23px 8px;
+                color: #c7c7c7;
+                border-bottom: 2px solid #c7c7c7;
+                cursor: not-allowed;
+            }
+        }
+        .inputWrapper {
+            
+            label {
+                margin-bottom: 15px;
+                color: #949494;
+                font-size: 16px;
+            }
+            input {
+                width: 100%;
+                padding: 12px 0 12px 20px;
+                font-size: 16px;
+            }
+            input.error {
+                border: 1px solid #ff5959;
+                box-shadow: 0px 0px 20px 0px rgba(255, 89, 89, 0.2);
+            }
+            .loginInput {
+                margin-bottom: 20px;
+            }
+            .passwordInput {
+                margin-bottom: 30px;
+            }
+            .errorWrapper {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .errorMessage {
+                    position: absolute;
+                    text-align: center;
+                    font-size: 14px;
+                    top: -25px;
+                    color: #ff5959;
+                }
+            }
+        }
+        .submit {
+            width: 100%;
+            font-size: 22px;
+            font-weight: 500;
+            color: #fff;
+            letter-spacing: 0.02em;
+            margin-bottom: 15px;
+            @media screen and (max-width: 500px){
+                font-size: 20px;
+            }
+        }
+        .disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .recoverPassword {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            p {
+                background: none;
+                color: #5970ff;
+                font-size: 14px;
+                text-decoration: underline;
+                letter-spacing: 0.02em;
+                cursor: not-allowed;
+            }
+        }
+        .entryOptions {
+            p {
+                font-size: 16px;
+                color: #949494;
+                margin-bottom: 15px;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                @media screen and (max-width: 500px){
+                    flex-wrap: wrap;
+                    row-gap: 10px;
+                }
+                img {
+                    margin-right: 10px;
+                    cursor: not-allowed;
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+            
+        }
+    }
+}

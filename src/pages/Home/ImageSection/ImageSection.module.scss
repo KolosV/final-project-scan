@@ -1,0 +1,35 @@
+.imageSection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+    @media screen and (max-width: 1050px) {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+    div {
+        width: 43%;
+        @media screen and (max-width: 1050px) {
+            width: 70%;
+        }
+    }
+    .leftWrapper {
+        text-align: start;
+        
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    .rightWrapper {
+        img {
+            width: 100%;
+            height: auto;
+            
+        }
+        @media screen and (max-width: 1050px) {
+            display: none;
+        }
+    }
+}

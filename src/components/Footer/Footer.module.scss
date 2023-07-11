@@ -1,0 +1,31 @@
+.footer {
+    padding: 25px 45px 25px 60px;
+    background: #029491;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    @media screen and (max-width: 500px) {
+        padding: 25px 19px;
+        align-items: flex-start;
+        .img {
+            img {
+                width: 75px;
+            }
+        }
+    }
+    .info {
+        text-align: end;
+        color: #fff;
+        div {
+            margin-bottom: 21px;
+            font-size: 14px;
+            a {
+                color: #fff;
+            }
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+}

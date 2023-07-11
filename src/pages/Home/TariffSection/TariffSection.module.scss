@@ -1,0 +1,12 @@
+.tariffWrapper {
+    display: flex;
+    gap: 38px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+    @media screen and (max-width: 1050px) {
+        margin-bottom: 40px;
+    }
+}
+

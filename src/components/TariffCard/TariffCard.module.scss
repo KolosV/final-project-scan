@@ -1,0 +1,100 @@
+.card {
+    border-radius: 10px;
+    width: 415px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    @media screen and (max-width: 500px) {
+        width: 100%;
+        font-size: 16px;
+    }
+    .cardTitle {
+        padding: 11px 5px 35px 30px;
+        border-radius: 7px 7px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        h3 {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+    }
+    .cardInfo {
+        position: relative;
+        padding: 33px 14px 0px 30px;
+        margin-bottom: 55px;
+        @media screen and (max-width: 500px) {
+            padding: 20px;
+            margin-bottom: 0;
+        }
+        .conditions {
+            margin-bottom: 59px;
+            @media screen and (max-width: 500px) {
+                margin-bottom: 20px;
+            }
+        }
+        .currentTariff {
+            padding: 4px 13px;
+            background: #3ba5e0;
+            border-radius: 10px;
+            font-size: 14px;
+            color: #fff;
+            position: absolute;
+            right: 10px;
+            top: 12px;
+        }
+        .price {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            p {
+                margin-right: 20px;
+                font-size: 30px;
+                font-weight: 500;
+            }
+            span {
+                text-decoration: line-through;
+                font-weight: 500;
+                font-size: 25px;
+                opacity: 0.5;
+            }
+        }
+        .tariffIncludes {
+            h3 {
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+                &:last-child {
+                    margin: 0;
+                }
+                img {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    .btnWrapper {
+        padding: 0 30px 24px;
+        .tariffBtn {
+            color: #fff;
+            font-size: 20px;
+            width: 100%;
+            @media screen and (max-width: 500px) {
+                font-size: 16px;
+            }
+        }
+        .currentTariffBtn {
+            width: 100%;
+            background: #d2d2d2;
+            font-size: 20px;
+            @media screen and (max-width: 500px) {
+                font-size: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@import './font/font.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+    font-family: 'Inter', sans-serif;
+}
+#root {
+    overflow: hidden;
+}
+html {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 10px;
+    min-height: calc(100vh - 245px);
+}
+h2 {
+    font-family: 'Ferry';
+    font-size: 45px;
+    margin-bottom: 70px;
+    line-height: 54px;
+    letter-spacing: 0.01em;
+    @media screen and (max-width: 1050px) {
+        margin-bottom: 32px;
+    }
+    @media screen and (max-width: 750px) {
+        font-size: 30px;
+    }
+    @media screen and (max-width: 500px) {
+        font-size: 28px;
+    }
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+}
+input {
+    height: 45px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #c7c7c7;
+    outline: none;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}

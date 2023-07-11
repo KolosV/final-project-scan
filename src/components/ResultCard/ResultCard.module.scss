@@ -1,0 +1,111 @@
+.resultCard {
+    padding: 19px 30px 35px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 700px;
+    @media screen and (max-width: 900px) {
+        height: auto;
+    }
+    @media screen and (max-width: 500px) {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+    .cardInfo {
+        font-size: 16px;
+        color: #949494;
+        display: flex;
+        margin-bottom: 24px;
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+        }
+        span {
+            margin-right: 14px;
+        }
+        a {
+            color: #949494;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    .cardTitle {
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.02em;
+        padding-right: 65px;
+        margin-bottom: 14px;
+        height: 62px;
+        overflow: hidden;
+        @media screen and (max-width: 500px) {
+            padding-right: 0;
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 19px;
+        }
+    }
+    .cardAttributes {
+        display: inline-block;
+        padding: 4px 14px;
+        background: #ffb64f;
+        border-radius: 5px;
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+    .cardImage {
+        width: 100%;
+        margin-bottom: 20px;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    .cardText {
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 32px;
+        height: 228px;
+        overflow: hidden;
+        @media screen and (max-width: 500px) {
+            overflow: auto;
+        }
+        br {
+            display: none;
+        }
+        a {
+            display: none;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+
+        img {
+            display: none;
+        }
+    }
+    .cardFooter {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+        }
+        .cardBtn {
+            button {
+                padding: 14px 32px;
+                border-radius: 5px;
+                background: #7ce3e1;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            @media screen and (max-width: 500px) {
+                margin-bottom: 20px;
+            }
+        }
+        .countLetters {
+            display: flex;
+            align-items: flex-end;
+            font-size: 16px;
+            color: #949494;
+        }
+    }
+}
